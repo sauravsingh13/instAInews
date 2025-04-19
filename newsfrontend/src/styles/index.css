@@ -1,0 +1,22 @@
+:root {
+  --bg: #f9f9f9;
+  --text: #111;
+  --card-bg: #fff;
+  --link: #3b82f6;
+  --news-card-shadow:5px 12px 24px rgba(0, 0, 0, 0.1);
+;}
+
+.dark-theme {
+  --bg: #1a202c;
+  --text: #f9fafb;
+  --card-bg: #2d3748;
+  --link: #60a5fa;
+  --news-card-shadow:5px 12px 24px rgba(4, 109, 237, 0.3)
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.1s ease, color 0.1s ease;
+  font-family: sans-serif;
+}

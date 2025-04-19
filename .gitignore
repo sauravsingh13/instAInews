@@ -1,0 +1,33 @@
+# Node modules
+/NewsBackend/node_modules/
+/newsfrontend/node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# dotenv environment files
+.env
+.env.local
+.env.development
+.env.production
+
+# Build output
+/newsfrontend/build/
+/NewsBackend/dist/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE/editor folders
+.vscode/
+.idea/
+
+# Coverage reports
+coverage/
+
+# Misc
+.next/
+.cache/

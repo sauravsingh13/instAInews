@@ -1,0 +1,27 @@
+.app {
+  background-color: #f9f9f9;
+  color: #000;
+}
+.appDark {
+  background-color: #1a202c;
+  color: #fff;
+}
+.feedTitle {
+  margin: 1.5rem 2rem 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--link);
+  border-left: 4px solid var(--link);
+  padding-left: 1rem;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.dark-theme {
+  background-color: #1a202c;
+  color: #fff;
+}

@@ -1,0 +1,143 @@
+.newsCard {
+  background: var(--card-bg);
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  color: var(--text);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  animation: fadeInUp 0.6s ease both;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.newsCard:hover {
+  transform: translateY(-6px) scale(1.03);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.newsCard:hover {
+  box-shadow: var(--news-card-shadow);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.sourceDate {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  font-weight: 500;
+  opacity: 0.75;
+  margin-bottom: 0.25rem;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0.25rem 0 0.5rem;
+  color: var(--text);
+}
+
+.desc {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+
+a {
+  color: var(--link);
+  font-weight: 500;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.thumbnail {
+  width: 100%;
+  height: auto;
+  max-height: 220px;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.thumbnail:hover {
+  transform: scale(1.02);
+}
+
+.toggleWrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0.75rem;
+}
+
+.toggleLabel {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  user-select: none;
+  color: var(--text);
+}
+
+.toggleLabel input {
+  display: none;
+}
+
+.toggleSlider {
+  position: relative;
+  width: 36px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 12px;
+  transition: background-color 0.3s;
+}
+
+.toggleSlider::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.toggleLabel input:checked + .toggleSlider {
+  background-color: #3b82f6;
+}
+
+.toggleLabel input:checked + .toggleSlider::before {
+  transform: translateX(16px);
+}
+
+.toggleText {
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.summary {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  background-color: rgba(59, 130, 246, 0.05); /* light blue tint */
+  border-left: 4px solid #3b82f6;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text);
+  transition: background-color 0.3s ease;
+}
