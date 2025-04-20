@@ -92,20 +92,53 @@
     padding-right: 2.5rem;
   
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
-  }
+}
   
-  .dropdown:hover {
+.dropdown:hover {
     border-color: #3b82f6;
-  }
+}
   
-  .dropdown:focus {
+.dropdown:focus {
     outline: none;
     border-color: #3b82f6;
     box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
-  }
+}
 
-  .header {
+.header {
     background-color: var(--card-bg);
     color: var(--text);
-  }
-  
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .search {
+        /* width: 100%; */
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .controls {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        justify-content: space-between;
+    }
+
+    .dropdown {
+        width: 100%;
+    }
+
+    .toggle {
+        font-size: 1.4rem;
+    }
+
+    .avatar {
+        font-size: 1.4rem;
+    }
+}
