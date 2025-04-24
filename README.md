@@ -1,8 +1,20 @@
+
+## 🚀 Live Demo  
+🌐 [https://inst-a-inews.vercel.app/]
+
+---
 # instAInews
 InstAInews is an intelligent news aggregator web application that curates news from multiple Indian and global sources, enriched with AI-powered features like summarization and conversational search.
 Built with React, Node.js, RSS feeds, and OpenAI, InstAInews delivers a modern, interactive, and insightful way to stay updated.
 
 ⸻
+
+### 🔹 Dashboard  
+Manage your blog posts from a sleek, minimal interface.
+
+<img src="./screenshots/dashboard.png" alt="Dashboard view of ElevateCMS" width="100%" />
+
+---
 
 ✨ Features
 
